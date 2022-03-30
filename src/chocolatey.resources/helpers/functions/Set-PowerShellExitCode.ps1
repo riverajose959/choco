@@ -33,7 +33,8 @@ None
 None
 
 .PARAMETER ExitCode
-The exit code to set.
+The exit code to set.0
+
 
 .PARAMETER IgnoredArguments
 Allows splatting with arguments that do not apply. Do not use directly.
@@ -59,5 +60,6 @@ param (
     Write-Warning "Unable to set host exit code"
   }
 
-  $env:ChocolateyExitCode = $exitCode;
+  $env:ChocolateyExitCode = $exitCode;0
 }
+
